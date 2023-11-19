@@ -1,9 +1,137 @@
-<mxfile host="app.diagrams.net" modified="2023-11-19T12:56:31.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.3" etag="Tzrv14Z_FDKmVgnamayw" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-19T15:26:59.394Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="1f3oBnDkZ0EJTTlkqaQU" version="22.1.3" type="github">
   <diagram name="第 1 页" id="NALEjhZQLY3KUpHjKGov">
-    <mxGraphModel>
+    <mxGraphModel dx="860" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-1" value="二级销售员存在且二级销售员编码为空" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-4" value="根据销售员名称获取销售员编码" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-1" target="ZrHzfmJp47j0L-04B1gr-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="489.28932188134524" as="sourcePoint" />
+            <mxPoint x="60" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-8" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-7">
+          <mxGeometry x="0.0167" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="540" as="sourcePoint" />
+            <mxPoint x="150" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-11" value="校验所选销售小组是否属于当前客户" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-12" value="是否填写账期？" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZrHzfmJp47j0L-04B1gr-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="540" as="sourcePoint" />
+            <mxPoint x="300" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="510" as="sourcePoint" />
+            <mxPoint x="340" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-15" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-14">
+          <mxGeometry x="-0.0333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-16" value="1、判断客户类型，c类客户不允许填写账期&lt;br&gt;2、查询客户是否有授信，先查父级客户，看是否是联合授信&lt;br&gt;3、如果不是，直接根据客户编码获取授信额信息&lt;br&gt;&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="440" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-17" value="校验销售合同中的物料信息，并统计危险化学品数量，并查询当前主体和部门是否开启危险化学品经营校验开关" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="510" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZrHzfmJp47j0L-04B1gr-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="540" as="sourcePoint" />
+            <mxPoint x="450" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.444;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ZrHzfmJp47j0L-04B1gr-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="510" as="sourcePoint" />
+            <mxPoint x="1100" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="460" />
+              <mxPoint x="1210" y="460" />
+              <mxPoint x="1210" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-23" value="提交" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-22">
+          <mxGeometry x="-0.1222" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-26" value="保存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-22">
+          <mxGeometry x="-0.1222" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-24" value="提交" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-19" target="ZrHzfmJp47j0L-04B1gr-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-19" value="提交/保存？" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-20" target="ZrHzfmJp47j0L-04B1gr-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-20" value="1、校验合同的明细列表中是否存在物料信息&lt;br&gt;2、各种必填项校验" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-28" target="ZrHzfmJp47j0L-04B1gr-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-34" value="关闭" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-33">
+          <mxGeometry x="-0.1319" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-28" target="ZrHzfmJp47j0L-04B1gr-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-38" value="开启" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZrHzfmJp47j0L-04B1gr-36">
+          <mxGeometry x="-0.1403" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-28" value="判断当前主体是否开启超授信业务审批流主体开关" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-32" target="ZrHzfmJp47j0L-04B1gr-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-32" value="校验获取物料是否物料大类，是则报错" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-35" value="根据客户编号和主体获取授信，如果授信等级为A或B且剩余额度大于0，则设置超授信标识为true" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="610" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZrHzfmJp47j0L-04B1gr-41" target="ZrHzfmJp47j0L-04B1gr-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-41" value="1、校验合同不能有相同的物料&lt;br&gt;2、校验如果有父级不能存在子集" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="505" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrHzfmJp47j0L-04B1gr-43" value="添加销售合同详情" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
