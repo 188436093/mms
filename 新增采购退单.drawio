@@ -1,11 +1,97 @@
-<mxfile host="app.diagrams.net" modified="2023-11-20T08:17:32.409Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="KOn6nRefsAs1r9TB1Soo" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-20T09:26:28.098Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="IYsWXpBK-wHB6AzblhVd" version="22.1.3" type="github">
   <diagram name="第 1 页" id="5fXoOFTsolpHIbZ1TO_L">
     <mxGraphModel dx="605" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-2" target="Rc72pF7vDM-TfxJGRlKb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Rc72pF7vDM-TfxJGRlKb-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、明细中每个物料的申请数量/单价/总价都不能为0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、申请数量不可超过可售后数量&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、售后单价不可超过可售后总价/可售后数量退款金额不可超过可售后金额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4、退款金额不可超过可售后金额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5、售后类型若为仅退款，必须存在审核通过的正数付款单（付过钱才能退）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6、同一物料仅可存在一张未完成的售后服务单&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7、&lt;/span&gt;售后批次的申请数量不能大于可售后数量&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;8、去除明细中状态为处理完成、审核驳回和已取消的物料&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="290" width="410" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-3" target="Rc72pF7vDM-TfxJGRlKb-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-3" value="生成退货单号编号" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-5" target="Rc72pF7vDM-TfxJGRlKb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-9" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rc72pF7vDM-TfxJGRlKb-8">
+          <mxGeometry x="0.0417" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-5" target="Rc72pF7vDM-TfxJGRlKb-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-12" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rc72pF7vDM-TfxJGRlKb-11">
+          <mxGeometry x="-0.0417" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-5" value="退款币种是否为人名币" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-7" value="调用汇率服务获取当前汇率" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-10" target="Rc72pF7vDM-TfxJGRlKb-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-10" value="汇率为1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-13" target="Rc72pF7vDM-TfxJGRlKb-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-13" value="新增售后明细、售后批次、换货批次" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-15" target="Rc72pF7vDM-TfxJGRlKb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-15" value="新增附件表" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="350" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-18" target="Rc72pF7vDM-TfxJGRlKb-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-18" value="删除编辑页面中删除的明细" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="335" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-20" target="Rc72pF7vDM-TfxJGRlKb-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-24" value="换货单" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rc72pF7vDM-TfxJGRlKb-23">
+          <mxGeometry x="-0.0333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-20" target="Rc72pF7vDM-TfxJGRlKb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-27" value="非换货单" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Rc72pF7vDM-TfxJGRlKb-26">
+          <mxGeometry x="-0.125" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rc72pF7vDM-TfxJGRlKb-20" target="Rc72pF7vDM-TfxJGRlKb-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-20" value="判断售后类型" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-22" value="自动审核通过，售后状态改为售后中" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-25" value="给审批人发消息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-28" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="320" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
