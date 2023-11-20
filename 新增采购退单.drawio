@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-11-20T05:56:33.011Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Kckd1FDSrGEiQEJ22OQN" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-20T08:17:32.409Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="KOn6nRefsAs1r9TB1Soo" version="22.1.3" type="github">
   <diagram name="第 1 页" id="5fXoOFTsolpHIbZ1TO_L">
-    <mxGraphModel dx="1461" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="605" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Rc72pF7vDM-TfxJGRlKb-2" value="1、明细中每个物料的申请数量/单价/总价都不能为0" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="290" width="100" height="100" as="geometry" />
+        <mxCell id="Rc72pF7vDM-TfxJGRlKb-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、明细中每个物料的申请数量/单价/总价都不能为0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、申请数量不可超过可售后数量&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、售后单价不可超过可售后总价/可售后数量退款金额不可超过可售后金额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4、退款金额不可超过可售后金额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5、售后类型若为仅退款，必须存在审核通过的正数付款单（付过钱才能退）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6、同一物料仅可存在一张未完成的售后服务单&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7、&lt;/span&gt;售后批次的申请数量不能大于可售后数量&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;8、去除明细中状态为处理完成、审核驳回和已取消的物料&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="410" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
