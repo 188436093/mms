@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-12-16T17:09:31.123Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.11" etag="bSLPo_Wdh3UH_5Y57dJe" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-16T18:38:50.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rRcMbpGe0oY1UkALVkDj" version="22.1.11" type="github">
   <diagram name="第 1 页" id="KGqY5eOQTbdGlDZYk4s8">
-    <mxGraphModel>
+    <mxGraphModel dx="648" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="h73sEmdTAqjSbu8iskxw-2" value="&lt;h1&gt;前置校验：&lt;/h1&gt;&lt;div&gt;1、&lt;/div&gt;通用必填属性：型号、规格、分供商名称及编码、中类编码、大类编码&lt;div&gt;2、&lt;/div&gt;&lt;div&gt;如果是危险货物，则以下字段必填：Ems Psn Pg ClassNo Unno MsdsUrl&lt;/div&gt;&lt;div&gt;3、&lt;/div&gt;如果是化工品，并且化学物质为纯净物，则CasNo必填&lt;br&gt;4、&lt;br&gt;规格型号不得超过40个字符，且物料名称规格型号不得是提前约定好的一些字符&lt;br&gt;5、&lt;br&gt;物料中英文名称若超过150个字符，截取前150个&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6、&lt;/span&gt;&lt;br&gt;&lt;/div&gt;根据名称规格型号去系统中查询是否存在名称规格型号全部相同的物料，有则报错&lt;br&gt;7、&lt;br&gt;如果税收分类编码是指定的那几个，报错&lt;br&gt;8、&lt;br&gt;如果添加的物料是物料大类，则根据物料编码和大类编码校验不能重复" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="470" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-4" target="h73sEmdTAqjSbu8iskxw-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-4" value="生成物料编码：根据是否组走不同的生成规则，如果是组，生成好物料编码后还要构建子物料，建立关联" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="620" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-5" target="h73sEmdTAqjSbu8iskxw-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-11" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-8">
+          <mxGeometry x="-0.0545" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-5" target="h73sEmdTAqjSbu8iskxw-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-14" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-13">
+          <mxGeometry x="-0.2076" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-5" value="化学性质是否为混合物" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="622.5" width="65" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-7" target="h73sEmdTAqjSbu8iskxw-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-7" value="将请求中的混合物成分列表插入物料混合物表中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="482.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-12" target="h73sEmdTAqjSbu8iskxw-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-23" value="开启并且物料属于危险品" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-19">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-12" value="查询配置表，查看是否开启了判定危险化学品经营/生产许可证校验开关" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-18" value="1、校验关联供应商危化品经营许可证是否上传/有效期&lt;br&gt;2、校验关联供应商危化品生产许可证是否上传/有效期" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="258.75" y="730" width="287.5" height="35" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
