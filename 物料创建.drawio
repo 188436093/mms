@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-12-16T18:38:50.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rRcMbpGe0oY1UkALVkDj" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-17T08:43:37.449Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="oiv63ZLVTdUOILBtXw9W" version="22.1.11" type="github">
   <diagram name="第 1 页" id="KGqY5eOQTbdGlDZYk4s8">
-    <mxGraphModel dx="648" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="616" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="h73sEmdTAqjSbu8iskxw-2" value="&lt;h1&gt;前置校验：&lt;/h1&gt;&lt;div&gt;1、&lt;/div&gt;通用必填属性：型号、规格、分供商名称及编码、中类编码、大类编码&lt;div&gt;2、&lt;/div&gt;&lt;div&gt;如果是危险货物，则以下字段必填：Ems Psn Pg ClassNo Unno MsdsUrl&lt;/div&gt;&lt;div&gt;3、&lt;/div&gt;如果是化工品，并且化学物质为纯净物，则CasNo必填&lt;br&gt;4、&lt;br&gt;规格型号不得超过40个字符，且物料名称规格型号不得是提前约定好的一些字符&lt;br&gt;5、&lt;br&gt;物料中英文名称若超过150个字符，截取前150个&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6、&lt;/span&gt;&lt;br&gt;&lt;/div&gt;根据名称规格型号去系统中查询是否存在名称规格型号全部相同的物料，有则报错&lt;br&gt;7、&lt;br&gt;如果税收分类编码是指定的那几个，报错&lt;br&gt;8、&lt;br&gt;如果添加的物料是物料大类，则根据物料编码和大类编码校验不能重复" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="h73sEmdTAqjSbu8iskxw-2" value="&lt;h1&gt;前置校验：&lt;/h1&gt;&lt;div&gt;1、&lt;/div&gt;通用必填属性：型号、规格、分供商名称及编码、中类编码、大类编码&lt;div&gt;2、&lt;/div&gt;&lt;div&gt;如果是危险货物，则以下字段必填：Ems Psn Pg ClassNo Unno MsdsUrl&lt;/div&gt;&lt;div&gt;3、&lt;/div&gt;如果是化工品，并且化学物质为纯净物，则CasNo必填&lt;br&gt;4、&lt;br&gt;规格型号不得超过40个字符，且物料名称规格型号不得是提前约定好的一些字符&lt;br&gt;5、&lt;br&gt;物料中英文名称若超过150个字符，截取前150个&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6、&lt;/span&gt;&lt;br&gt;&lt;/div&gt;根据名称规格型号去系统中查询是否存在名称规格型号全部相同的物料，有则报错&lt;br&gt;7、&lt;br&gt;如果税收分类编码是指定的那几个，报错&lt;br&gt;8、&lt;br&gt;如果添加的物料是物料大类，则根据物料编码和大类编码校验不能重复&lt;br&gt;9、&lt;br&gt;如果可选单位没有一个和主单位一致，初始添加一个和主单位一致的可选单位" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="100" y="80" width="470" height="370" as="geometry" />
         </mxCell>
         <mxCell id="h73sEmdTAqjSbu8iskxw-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-4" target="h73sEmdTAqjSbu8iskxw-5">
@@ -46,11 +46,212 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-12" target="h73sEmdTAqjSbu8iskxw-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-26" value="关闭状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-25">
+          <mxGeometry x="-0.0825" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="h73sEmdTAqjSbu8iskxw-12" value="查询配置表，查看是否开启了判定危险化学品经营/生产许可证校验开关" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="342.5" y="625" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="h73sEmdTAqjSbu8iskxw-18" value="1、校验关联供应商危化品经营许可证是否上传/有效期&lt;br&gt;2、校验关联供应商危化品生产许可证是否上传/有效期" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="258.75" y="730" width="287.5" height="35" as="geometry" />
+        <mxCell id="h73sEmdTAqjSbu8iskxw-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-18" value="1、校验关联供应商危化品经营许可证是否上传/有效期&lt;br&gt;2、校验关联供应商危化品生产许可证是否上传/有效期&lt;br&gt;3、如果同时关联了供应商，校验这个供应商的1和2" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="258.75" y="730" width="311.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-24" target="h73sEmdTAqjSbu8iskxw-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-24" value="将供应商信息插入物料供应商表，并关联" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="546.25" y="632.5" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-28" target="h73sEmdTAqjSbu8iskxw-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-28" value="默认实体中辅单位就是主单位，比率为1/1" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="746.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-30" target="h73sEmdTAqjSbu8iskxw-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-34" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-33">
+          <mxGeometry x="-0.19" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-30" target="h73sEmdTAqjSbu8iskxw-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-37" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-36">
+          <mxGeometry x="-0.0712" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-30" value="是否为危险品/危险货物/化工品任意一个？" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="946.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-32" target="h73sEmdTAqjSbu8iskxw-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-43" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-42">
+          <mxGeometry x="-0.0562" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-32" target="h73sEmdTAqjSbu8iskxw-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-47" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-46">
+          <mxGeometry x="-0.02" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-32" value="查询是否开启了品名推送开关" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="946.25" y="765" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-35" target="h73sEmdTAqjSbu8iskxw-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-40" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-39">
+          <mxGeometry x="0.015" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-35" target="h73sEmdTAqjSbu8iskxw-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-51" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-50">
+          <mxGeometry x="-0.1312" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-35" value="填写了禁限控类型？" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1146.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-38" value="发送企微通知" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1146.25" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1206.25" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-41" value="将改物料的审批状态自动设为审批通过" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1146.25" y="765" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-45" target="h73sEmdTAqjSbu8iskxw-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-45" value="校验物料是否检验过禁限控，如果未检验过，发起品名禁限控审核" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="939.38" y="870" width="133.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-49" target="h73sEmdTAqjSbu8iskxw-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-49" value="保存构建的物料实体和可选单位集合" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1346.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-52" target="h73sEmdTAqjSbu8iskxw-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-56" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-55">
+          <mxGeometry x="-0.055" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-52" target="h73sEmdTAqjSbu8iskxw-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-59" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-58">
+          <mxGeometry x="-0.1663" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-52" value="新增物料时是否定义了WMS对应的物料基本单位和包装单位" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1546.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-54" value="1、往wms物料基本单位扩展表中新增mms物料编码和对应的wms物料主单位和基本单位及对应的比值&lt;br&gt;2、往wms物料包装单位扩展表中新增包装单位及对应的主单位和基本单位" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1499.38" y="765" width="213.75" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-57" target="h73sEmdTAqjSbu8iskxw-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1806" y="720" />
+              <mxPoint x="1806" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-62" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-61">
+          <mxGeometry x="-0.105" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-57" target="h73sEmdTAqjSbu8iskxw-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-65" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-64">
+          <mxGeometry x="-0.1062" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-57" value="状态为审核通过并且NC物料编码为空" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1746.25" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-60" value="查询配置表判断当前主体是否需要将新增的物料同步到采购销售基准价表中&lt;br&gt;1、需要：新增物料到采购销售基准价表中，并且推送NC&lt;br&gt;2、不需要：直接推送NC" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="765" width="233.75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-63" target="h73sEmdTAqjSbu8iskxw-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1993" y="580" />
+              <mxPoint x="1993" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-71" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-70">
+          <mxGeometry x="-0.07" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-63" target="h73sEmdTAqjSbu8iskxw-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-74" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-73">
+          <mxGeometry x="-0.1746" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-63" value="审核状态是否为待审核且为服务类物料信息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1946.25" y="625" width="93.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-69" value="将服务类物料信息添加到自动出入库基础数据表中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1933.125" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-72" target="h73sEmdTAqjSbu8iskxw-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-77" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h73sEmdTAqjSbu8iskxw-76">
+          <mxGeometry x="0.01" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h73sEmdTAqjSbu8iskxw-72" target="h73sEmdTAqjSbu8iskxw-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-72" value="审核状态为已通过" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2106.875" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-75" value="将物料同步至ES" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2106.875" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h73sEmdTAqjSbu8iskxw-78" value="结束" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2306.875" y="625" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
