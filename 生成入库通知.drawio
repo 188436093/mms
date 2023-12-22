@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" modified="2023-12-22T06:57:23.606Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0ONKSrWIM62LRru1hDgY" version="22.1.11" type="github">
+  <diagram name="第 1 页" id="-ZltAnFMRnrPX8IdyNOE">
+    <mxGraphModel dx="1461" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7LnMF1Zov575ZfFQeR5a-11" target="7LnMF1Zov575ZfFQeR5a-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-11" value="判断该订单的数量是否已经全部下过通知：&lt;br&gt;1、根据采购订单号查询之前生成的所有入库通知单，在通过这些入库通知单的单号找对对应的通知单明细&lt;br&gt;2、根据库通知单号查到对应入库单明细&lt;br&gt;3、根据采购订单号获取采购订单和关联的采购合同&lt;br&gt;4、遍历当前入库通知的每个明细，当前入库通知数量+入库单明细数量+已有入库通知单明细数量 不能大于订单明细总数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="290" width="330" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7LnMF1Zov575ZfFQeR5a-12" target="7LnMF1Zov575ZfFQeR5a-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-12" value="保存入库通知单及入库通知明细数据&lt;br&gt;1、入库通知单就是把请求参数copy在添加一些必要参数即可生成&lt;br&gt;2、根据采购单号获取采购订单&lt;br&gt;3、遍历入库通知明细，找到每个明细的物料信息，最后生成入库通知明细" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="380" y="292.5" width="240" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7LnMF1Zov575ZfFQeR5a-14" target="7LnMF1Zov575ZfFQeR5a-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-18" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7LnMF1Zov575ZfFQeR5a-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.0238" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-14" value="通知单是否为已提交状态" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="690" y="310" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-16" value="根据入库通知单号判断是否有入库单明细，也就是判断该通知单是否已经生成过单子" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="830" y="315" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-19" value="结束前的job方法" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1460" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-31" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="310" as="sourcePoint" />
+            <mxPoint x="730" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-32" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="250" as="sourcePoint" />
+            <mxPoint x="1520" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-35" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7LnMF1Zov575ZfFQeR5a-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.0154" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7LnMF1Zov575ZfFQeR5a-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="7LnMF1Zov575ZfFQeR5a-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1520" y="250" as="sourcePoint" />
+            <mxPoint x="1520" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
